@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Pizza HUT SPA.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="mt-5">Pide tu pizza ahora!</h1>
+            </div>
+        </div>
+        <form action="pedidos.php" method="POST" class="text- center form mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="card">
+                            <div class="card-header">
+                                <label for="promo">Selecciona tu promo</label>
+                            </div>
+                            <div class="card-body">
+                                <select multiple class="form-control" id="promo" name="promo" required>
+                                <option value="1">PIZZA INDIVIDUAL + BEBIDA : $ 5.000</option>
+                                <option value="2">PIZZA MEDIANA + BEBIDA : $ 7.000</option>
+                                <option value="3">PIZZA FAMILIAR + BEBIDA : $ 10.000</option>
+                                <option value="4">PIZZA XL + BEBIDA : $ 15.000</option>
+                            </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="card">
+                            <div class="card-header">
+                                <label for="bebida">Seleccionar bebida</label>
+                            </div>
+                            <div class="card-body">
+                                <select multiple class="form-control" name="bebida" id="bebida" required>
+                                <option value="1">Coca-Cola</option>
+                                <option value="2">Fanta</option>
+                                <option value="3">Sprite</option>
+                                <option value="4">Pepsi</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="card">
+                            <div class="card-header">
+                                <label for="entrega">Entrega</label>
+                            </div>
+                            <div class="card-body">
+                                <select multiple class="form-control" name="entrega" id="entrega" required>
+                                <option value="1">Delivery (+$2.000)</option>
+                                <option value="2">Retiro en Local para Llevar</option>
+                                <option value="3">Retiro en Local para Servir</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <label for="cliente">Ingrese Nombre y Apellido</label>
+                    <input type="text" class="form-control" name="cliente" required>
+                </div>
+            </div>
+            <div class="mt-5"></div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-large btn-primary">¡PEDIR AHORA!</button>
+                </div>
+            </div>
+        </form>
+
+
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
